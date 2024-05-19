@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django Template</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <p>Welcome to my Django template.</p>
+
+    <ul>
+     {% for item in userdata %}
+         <h2>{{ item }}</h2>
+     {% endfor %}
+    </ul>
+    <div> brwak 
+    </div>
+    <ul>
+     {% for item in ownerdata %}
+         <h2>{{ item }}</h2>
+     {% endfor %}
+    </ul>
+    <div>
+      hbbreak
+    </div>
+    <ul>
+     {% for item in propertydata %}
+         <h2>{{ item }}</h2>
+     {% endfor %}
+    </ul>
+    <ul>
+     {% for item in bookingdata %}
+         <h2>{{ item }}</h2>
+     {% endfor %}
+    </ul>
+
+
+</body>
+</html>
