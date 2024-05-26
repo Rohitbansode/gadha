@@ -35,26 +35,26 @@ def data_view(request):
     # Render template with data
     return render(request, 'task-details.html', context)
 
-def userapi(request):
-    api_url = 'http://127.0.0.1:8001/users/'
-    response = requests.get(api_url)
-    data = response.json()
-    context =  {'userdata':data} 
-    return render(request, 'home.html', context)     
+# def userapi(request):
+#     api_url = 'http://127.0.0.1:8001/users/'
+#     response = requests.get(api_url)
+#     data = response.json()
+#     context =  {'userdata':data} 
+#     return render(request, 'home.html', context)     
 
 def ownerapi(request):
     api_url = "http://127.0.0.1:8001/owners/"
     response = requests.get(api_url)
     ownerdata = response.json()
     context = {'ownerdata':ownerdata}
-    return render(request,  'home.html', context)
+    return render(request, "home.html", context)
 
 def propertyapi(request):
     api_url = "http://127.0.0.1:8001/properties"
     response = requests.get(api_url)
     propertydata = response.json()
     context = {'propertydata':propertydata}
-    return render(request, home.html, context)
+    return render(request, "home.html", context)
 
 
 
